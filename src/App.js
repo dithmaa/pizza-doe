@@ -10,9 +10,9 @@ function App() {
 
   const [pizzas, setPizzas] = React.useState([]);
 
-  React.useEffect( async ()=>{
-    await axios.get('http://localhost:3000/db.json').then((response)=>{
-      setPizzas(response.data);
+  React.useEffect(()=>{
+    axios.get('http://localhost:3000/db.json').then(({data})=>{
+      setPizzas(data.pizzas);
     })
   }, [])
   
@@ -21,7 +21,7 @@ function App() {
       <Header/>
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home items={pizzas} />}/>
           <Route path="/cart" element={<Cart/>}/>
         </Routes>
       </div>

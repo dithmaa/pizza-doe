@@ -1,14 +1,16 @@
 import React from 'react'
 
 function SortPopup({items}) {
+    
     const [visiblePopup, setVisiblePopup] = React.useState(false);
     const [activeItem, setActiveItem] = React.useState(0);
     const sortRef = React.useRef(null); // хранить данные reactjs
 
-    const activeLabel = items[activeItem];
+    const activeLabel = items[activeItem].name;
+
 
     const toggleVisiblePopup = () => {
-        setVisiblePopup(!visiblePopup) 
+        setVisiblePopup(!visiblePopup); 
     }
 
     const handleOutsideClick = (e) => {
@@ -51,12 +53,12 @@ function SortPopup({items}) {
                 <div className="sort__popup">
                     <ul>
                     {
-                        items && items.map((name, index)=>(
+                        items && items.map((obj, index)=>(
                             <li 
                             className={activeItem === index ? 'active' : ''}
-                            key={`${name}_${index}`}
+                            key={`${obj.type}_${index}`}
                             onClick={()=>onSelectItem(index)}
-                            >{name}</li>
+                            >{obj.name}</li>
                         ))
                     }
                     </ul>

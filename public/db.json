@@ -4,11 +4,11 @@
             "id": 0,
             "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/eb6d128bbcd340e98fd4f14b377e769f_584x584.jpeg",
             "name": "Пеперони-Фрэш",
-            "types": [0, 1, 2],
-            "sizes": [26,40],
+            "types": [0],
+            "sizes": [30,40],
             "price": 245,
-            "category": 1,
-            "rating": 1
+            "category": 3,
+            "rating": 100
         },
         {
             "id": 1,
@@ -17,79 +17,148 @@
             "types": [0, 1],
             "sizes": [26, 30, 40],
             "price": 445,
-            "category": 1,
+            "category": 0,
             "rating": 4
         },
         {
             "id": 2,
             "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/163d95b8408843419b0c8ee18aa2452b_584x584.jpeg",
             "name": "Аррива!",
-            "types": [0],
-            "sizes": [26],
+            "types": [0,1],
+            "sizes": [26,30,40],
             "price": 395,
-            "category": 2,
+            "category": 1,
             "rating": 3
         },
         {
             "id": 3,
             "imageUrl": "https://sun9-66.userapi.com/impg/pko_P4bj70EbPx95qCz5DIyz6C1PDy03Jn8iwQ/SoeYqMUhOGE.jpg?size=520x0&quality=95&sign=48472fc88e74db5911dc8a468be719a7",
             "name": "Кисло-сладкий цыплёнок",
-            "types": [0],
-            "sizes": [26, 40],
+            "types": [0,1],
+            "sizes": [26,30,40],
             "price": 395,
-            "category": 3,
+            "category": 0,
             "rating": 1
         },
         {
             "id": 4,
             "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/20734006e66d427fb2cbb8fbb595b21e_584x584.jpeg",
             "name": "Колбаски барбекю",
-            "types": [0],
-            "sizes": [26],
+            "types": [0,1],
+            "sizes": [26,30,40],
             "price": 395,
-            "category": 4,
+            "category": 3,
             "rating": 2
         },
-        
         {
             "id": 5,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/5f21db048a124b6db5462f0dd21df57f_584x584.jpeg",
-            "name": "Сырники с джемом",
-            "types": [1],
-            "sizes": [40],
-            "price": 289,
-            "category": 2,
-            "rating": 3
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/772d900150264e119a86571b302a3651_584x584.jpeg",
+            "name": "Овощи гриль",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 469,
+            "category": 1,
+            "rating": 2
         },
         {
             "id": 6,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d30242be31454f698db2028aed954e40_584x584.jpeg",
-            "name": "Coca-Cola",
-            "types": [1],
-            "sizes": [26, 40],
-            "price": 99,
-            "category": 2,
-            "rating": 6
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/103d94956de3424586764b1adeca5e68_584x584.jpeg",
+            "name": "Песто",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 469,
+            "category": 0,
+            "rating": 80
         },
         {
             "id": 7,
-            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e168f60e82014ac8947d7b8bf8a53eaf_584x584.jpeg",
-            "name": "Два клубничных пончика",
-            "types": [1],
-            "sizes": [26, 40],
-            "price": 199,
-            "category": 5,
-            "rating": 6
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/5630c6ed3f394c7ba25e1ef79a67b7ee_584x584.jpeg",
+            "name": "Ветчина и сыр",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 309,
+            "category": 0,
+            "rating": 2
         },
         {
             "id": 8,
-            "imageUrl": "https://images.sushishop.ru/assets/images/cache/docs/39/2021filadelfiya.jpg/1629470311/435x348.webp",
-            "name": "Филадельфия",
-            "types": [1],
-            "sizes": [26, 40],
-            "price": 30,
-            "category": 5,
-            "rating": 6
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/2ac448e39ba24623a33c1d8d50b69ef8_584x584.jpeg",
+            "name": "Диабло",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 469,
+            "category": 3,
+            "rating": 70
+        },
+        {
+            "id": 9,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/57157f013c164840a24c1d49c7adb3b6_584x584.jpeg",
+            "name": "Цыплёнок барбекю",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 469,
+            "category": 0,
+            "rating": 2
+        },
+        {
+            "id": 10,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/a02280d5dd9342f7925538752be9b521_584x584.jpeg",
+            "name": "Четыре сезона",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 419,
+            "category": 4,
+            "rating": 2
+        },
+        {
+            "id": 11,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/3e4065bbc610451f9441a9ced2426f23_584x584.jpeg",
+            "name": "Додо",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 469,
+            "category": 2,
+            "rating": 2
+        },
+        {
+            "id": 12,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/c069fc6e169c4d4eae80e319b1d979e7_584x584.jpeg",
+            "name": "Пицца-пирог",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 369,
+            "category": 4,
+            "rating": 76
+        },
+        {
+            "id": 13,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/5b5d246f1d154bd39f606d1d72899a27_584x584.jpeg",
+            "name": "Супермясная",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 519,
+            "category": 0,
+            "rating": 2
+        },
+        {
+            "id": 14,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e5c6c0eab4584aca913210aef749d6a7_584x584.jpeg",
+            "name": "Индейка в мандаринах",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 579,
+            "category": 0,
+            "rating": 2
+        },
+        {
+            "id": 15,
+            "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/b145ba5572f4445bbfb335f1a5e25d1c_584x584.jpeg",
+            "name": "Чикенбомбони",
+            "types": [0,1],
+            "sizes": [26,30,40],
+            "price": 469,
+            "category": 2,
+            "rating": 2
         }
         
     ]

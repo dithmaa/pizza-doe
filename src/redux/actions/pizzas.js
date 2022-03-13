@@ -5,21 +5,12 @@ export const setLoaded = (payload) => ({
   payload,
 });
 
-export const fetchPizzas = (catIndex) => (dispatch) => { // Redux Thunk
+export const fetchPizzas = (category, sortBy) => (dispatch) => { // Redux Thunk
     dispatch(setLoaded(false));
-    if(catIndex != null){
-      catIndex++;
-
-      axios.get(`http://localhost:3001/pizzas?category=${catIndex}`).then(({data})=>{
-        dispatch(setPizzas(data));
-      });
-    }
-    else {
-      axios.get(`http://localhost:3001/pizzas`).then(({data})=>{
-        dispatch(setPizzas(data));
-      });
-    }
-    
+    axios.get(`/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
+    .then(({data})=>{
+      dispatch(setPizzas(data));
+    });
 }
 
 export const setPizzas = (items) =>({

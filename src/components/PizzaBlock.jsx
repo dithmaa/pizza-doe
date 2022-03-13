@@ -1,11 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-
 import PropTypes from 'prop-types';
+import {Button} from './';
 
-
-
-function PizzaBlock({ name, imageUrl, price, types, sizes }) {
+function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, addedCount }) {
+    console.log(addedCount);
     const availableTypes = ['тонкое', 'традиционное'];
     const availableSizes = [26,30,40];
 
@@ -17,6 +16,17 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
     }
     const onSelectSize = (index) => {
         setActiveSize(availableSizes[index]);
+    }
+    const onAddPizza = () => {
+        const obj = {
+            id,
+            name, 
+            imageUrl,
+            price,
+            size: activeSize,
+            type: availableTypes[activeType]
+        };
+        onClickAddPizza(obj);
     }
 
     return (
@@ -61,7 +71,8 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
             </div>
             <div className="pizza-block__bottom">
                 <div className="pizza-block__price">от {price} ₽</div>
-                <div className="button button--outline button--add">
+                
+                <Button className="button--add" outline onClick={onAddPizza}>
                     <svg
                         width="12"
                         height="12"
@@ -75,8 +86,8 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
                         />
                     </svg>
                     <span>Добавить</span>
-                    <i>2</i>
-                </div>
+                    <i>{addedCount ? addedCount : 0}</i>
+                </Button>
             </div>
         </div>
     )
@@ -88,7 +99,9 @@ PizzaBlock.propTypes = {
     imageUrl: PropTypes.string,
     price: PropTypes.number,
     types: PropTypes.arrayOf(PropTypes.number),
-    sizes: PropTypes.arrayOf(PropTypes.number)
+    sizes: PropTypes.arrayOf(PropTypes.number),
+    onAddPizza: PropTypes.func,
+    addedCount: PropTypes.number
 
 };
 
